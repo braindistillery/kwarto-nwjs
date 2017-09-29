@@ -1,0 +1,17 @@
+{
+  "name": "kwarto_demo",
+  "main": "kwarto.html",
+  "dependencies": {
+    "ffi": "^2.2.0",
+    "nw": "^0.24.4",
+    "nw-gyp": "^3.4.0",
+    "nwjs": "^1.4.3"
+  },
+  "window": {
+    "width": 900,
+    "height": 600,
+    "position": "center",
+    "frame": false,
+    "transparent": true
+  }
+}
