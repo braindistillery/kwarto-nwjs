@@ -243,8 +243,8 @@ kwarto.pos.solve = function() {
 /**
  *              UTILITIES (cont'd)
  */
-kwarto.perms = []
-for (let i = 0; i < 16; i++) kwarto.perms[i] = i
+kwarto.page.perm = []
+for (let i = 0; i < 16; i++) kwarto.page.perm[i] = i
 
 kwarto.util.set_stage = function(t) {
   let pos = kwarto.pos
@@ -252,7 +252,7 @@ kwarto.util.set_stage = function(t) {
   let page = kwarto.page
   if (t < 0) t = Math.floor(Math.random()*16)  /* begin */
   page.stage.innerHTML = page.image[t]
-  page.stock[ kwarto.perms[t] ].innerHTML = ''
+  page.stock[ page.perm[t] ].innerHTML = ''
   pos.stage = t
   pos.solve()
 }
@@ -264,7 +264,7 @@ kwarto.util.rem_stage = function( ) {
   pos.stage = -1
   let page = kwarto.page
   page.stage.innerHTML = page.image['o']
-  page.stock[ kwarto.perms[t] ].innerHTML = page.piece[t]
+  page.stock[ page.perm[t] ].innerHTML = page.piece[t]
   pos.setup()
 }
 
@@ -342,10 +342,10 @@ kwarto.page.reset.onclick = function() {
     page.board[i].innerHTML = page.place[i]
   }
   page.stage.innerHTML = page.image['o']
-  let perms = kwarto.perms
-  util.shuffle(perms)  /* each onclick has to be set again */
+  let perm = page.perm
+  util.shuffle(perm)  /* each onclick has to be set again */
   for (let i = 0; i < 16; i++) {
-    let stock = page.stock[ perms[i] ]
+    let stock = page.stock[ perm[i] ]
     stock.innerHTML = page.piece[i]
     stock.onclick = function() {
 /*    if (pos.masks != 0) return  /* **/
