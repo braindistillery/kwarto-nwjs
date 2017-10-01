@@ -11,8 +11,8 @@
 #   Intro
 
 An implementation of the board game
-[quarto](en.wikipedia.org/wiki/Quarto_(board_game))
-written in C, brought to life by [NW.js](nwjs.io).
+[quarto](https://en.wikipedia.org/wiki/Quarto_(board_game))
+written in C, brought to life by [NW.js](https://nwjs.io).
 
 
 #   Howto
@@ -23,7 +23,7 @@ written in C, brought to life by [NW.js](nwjs.io).
     (that’s why there’s no windows version yet – `npm install` depends on
     `vcbuild.exe`)
 
-*   download [`node.js`](nodejs.org/dist/v8.6.0/node-v8.6.0-linux-x64.tar.xz)
+*   download [`node.js`](https://nodejs.org/dist/v8.6.0/node-v8.6.0-linux-x64.tar.xz)
     and extract it to, say, `/home/user/foo/`
 
 *   clone the repo to, say, `/home/user/bar/`,
