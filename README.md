@@ -29,7 +29,7 @@ written in C, brought to life by [NW.js](https://nwjs.io).
 *   clone the repo to, say, `/home/user/bar/`,
     then open a terminal and navigate to the `kwarto-nwjs` directory
 
-*   make the executables visible:
+*   make the node binaries visible:
     `PATH=/home/user/foo/node-v8.6.0-linux-x64/bin:$PATH`
 
 *   `npm install ffi` and `npm install nw` (this will take some time)
