@@ -203,6 +203,7 @@ kwarto.pos.setup = function() {
   page.hints.innerHTML = '*' + m.toString(16).padStart(4, '0')
   for (let i = 0; i < 16; m >>= 1, i++)
     page.board[i].style.opacity = (((pos.board[i] >> 4) | m) & 1)*(1.-.5) + .5
+/*  page.board[i].style.opacity = pos.board[i] < 0 || (m & 1) != 0 ? 1. : .5 */
 }
 
 kwarto.pos.solve = function() {
@@ -222,13 +223,10 @@ kwarto.pos.solve = function() {
   let p = s & ((1<<4)-1)
   let f = (s << 16) >> (16+4)  /* the little bits . . . */
   let r = s >> 16
-  let t = ['-', '=', '+'][Math.sign(r) + 1] + hex[Math.abs(r)] + ' >' + hex[p]
-  pos.autom = p
-  if (f >= 0 && f != pos.stage && !pos.board.some(x => x == f))
-    t += ' !' + hex[f]
-  else
-    f = -1
-  pos.autom |= f << 4
+  if (pos.count == 15) f = -1
+  pos.autom = p | (f << 4)
+  let t = ['-', '=', '+'][Math.sign(r) + 1] + hex[Math.abs(r)]
+        + ' >' + hex[p] + ' !' + hex[f]
   page.hints.innerHTML = t
   if (d < 100)
     t = ''
