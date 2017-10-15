@@ -15,6 +15,15 @@ An implementation of the board game
 written in C, brought to life by [NW.js](https://nwjs.io).
 
 
+#   Files
+
+*   `*.dat`: pre-computed results of opening positions in compressed format
+
+*   `*.so`, `*.dll`: library files for loading data and solving positions
+
+*   `kwarto.html` and `kwarto.js`: an empty page and the script that makes it working
+
+
 #   Howto
 
 (64-bit instructions, change `x64` to `x86` for 32-bit systems)
