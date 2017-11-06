@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
  <g>
-  <rect x="21.5" y="21.5" width="7" height="7" rx="1" stroke-width="2" stroke="#3f7f7f" fill="none"/>
+<!--
+  <rect x="21.0" y="21.0" width="8" height="8" rx="1" stroke-width="1.5" stroke="#3f7f7f" fill="none"/>
+  -->
+  <circle cx="22" cy="22" r="1.5" fill="#3f7f7f"/>
+  <circle cx="22" cy="28" r="1.5" fill="#3f7f7f"/>
+  <circle cx="28" cy="22" r="1.5" fill="#3f7f7f"/>
+  <circle cx="28" cy="28" r="1.5" fill="#3f7f7f"/>
  </g>
 </svg>

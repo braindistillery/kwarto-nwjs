@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
  <g>
-  <rect x="20.5" y="20.5" width="9" height="9" rx="2" fill="#3f7f7f"/>
+<!--
+  <rect x="21.0" y="21.0" width="8" height="8" rx="1" stroke-width="1.5" stroke="#3f7f7f" fill="#3f7f7f"/>
+  -->
+  <rect x="21.5" y="21.5" width="7" height="7" stroke-width="1.5" stroke="#3f7f7f" fill="none"/>
  </g>
 </svg>
